@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title = "Canchero - Login usuario">
+    <div class="w-full h-[700px] bg-[url('/public/bg.jpg')] bg-no-repeat bg-cover flex items-center relative">
+        <div class="h-full w-full absolute bg-black/40"></div>
+        <div class="z-10 bg-white w-[500px] h-[600px] p-[60px] shadow-2xl m-auto rounded-3xl flex flex-col items-center justify-center">
+            <h2 class=" h-[75px] w-full text-5xl font-bold text-center">Login</h2>
+            <form class="h-[350px] w-full flex flex-col justify-center" action="">
+                <label class="text-2xl ml-4" for="">Usuario</label>
+                <input class="border-black border-2 border-solid mb-6 h-[50px] px-4 w-full rounded-3xl mt-1 shadow-2xl" type="text">
+                <label class="text-2xl ml-4" for="">Contraseña</label>
+                <input class="border-black border-2 border-solid mb-14 h-[50px] px-4 w-full rounded-3xl mt-1 shadow-2xl" type="password">
+                <button class="w-[250px] h-[50px] text-2xl mx-auto rounded-3xl border-black border-2 border-solid hover:text-white hover:bg-[#297908] hover:border-none ">
+                    Iniciar sesion
+                </button>
+            </form>
+            <div class="h-[75px] w-full flex gap-3 items-end">
+                <div class="flex gap-3 items-center h-auto">
+                    <p>¿Aun no estas registrado?</p>
+                    <a class="text-blue-800 hover:font-bold text-2xl " href="/login/registro">Registar</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</Layout>
