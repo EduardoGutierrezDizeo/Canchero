@@ -3,25 +3,27 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Canchero - Registro usuario">
-    <div class="w-full h-[900px] bg-[url('/public/bg.jpg')] bg-no-repeat bg-cover flex items-center relative">
+    <div class="w-full h-[1000px] bg-[url('/public/bg.jpg')] bg-no-repeat bg-cover flex items-center relative">
         <div class="h-full w-full absolute bg-black/40"></div>
-        <div class="z-10 bg-white w-[600px] h-[800px] p-[60px] shadow-2xl m-auto rounded-3xl flex flex-col items-center justify-center">
+        <div class="z-10 bg-white w-[600px] h-[900px] p-[60px] shadow-2xl m-auto rounded-3xl flex flex-col items-center justify-center">
             <h2 class=" h-[75px] w-full text-5xl font-bold text-center">Sing Up</h2>
             <form class="h-[650px] w-full flex flex-col justify-center" action="">
                 <label class="text-[23px] ml-4" for="">Nombres</label>
-                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-2xl" type="text">
+                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-xl" type="text">
                 <label class="text-[23px] ml-4" for="">Apellidos</label>
-                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-2xl" type="text">
+                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-xl" type="text">
                 <label class="text-[23px] ml-4" for="">Correo electronico</label>
-                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-2xl" type="text">
+                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-xl" type="text">
+                <label class="text-[23px] ml-4" for="">Numero de telefono</label>
+                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-xl" type="text">
                 <label class="text-[23px] ml-4" for="">Contraseña</label>
-                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-2xl" type="password">
+                <input class="border-black border-2 border-solid mb-6 h-[45px] px-4 w-full rounded-3xl mt-1 shadow-xl" type="password">
             </form>
             <div class="h-[75px] w-full flex gap-3 items-end">
                 <a class="w-[230px] h-[60px] text-[25px] mx-auto flex items-center justify-center hover:font-bold" href="/login">
                     Iniciar sesion
                 </a>
-                <button class="w-[230px] h-[60px] text-[25px] mx-auto rounded-3xl text-white bg-[#297908] font-bold shadow-2xl">
+                <button class="w-[230px] h-[60px] text-[25px] mx-auto rounded-3xl text-white bg-[#297908] hover:text-black hover:bg-white border-solid hover:border-2 border-black  font-bold shadow-2xl">
                     Registrarse
                 </button>
             </div>

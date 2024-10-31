@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title= "Perfil">
+    <section class="flex">
+        <div class="flex flex-col items-center w-[300px] text-[24px] bg-neutral-100">
+            <menu class="flex flex-col w-full items-start h-[600px]">
+                <a class=" transition duration-300 hover:bg-neutral-200 h-[80px] w-full flex items-center justify-center hover:shadow-lg" href="">Cuenta</a>
+                <a class=" transition duration-300 hover:bg-neutral-200 h-[80px] w-full flex items-center justify-center hover:shadow-lg" href="">Reservas</a>
+                <a class=" transition duration-300 hover:bg-neutral-200 h-[80px] w-full flex items-center justify-center hover:shadow-lg" href="">Contabilidad</a>
+            </menu>
+            <button class="font-bold shadow hover:shadow-xl h-[50px] w-[200px] text-white hover:text-[#1f2433] bg-[#1f2433] hover:bg-white hover:border-solid border-[#1f2433] border-2 text-2xl rounded-3xl mb-9">
+                Cerrar sesion
+            </button>
+        </div>
+    
+        <slot />
+    </section>
+</Layout>
