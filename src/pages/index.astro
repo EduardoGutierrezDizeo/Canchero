@@ -3,59 +3,54 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Canchero - Inicio">
-	<section class="bg-[url('/public/bg.jpg')] bg-cover bg-no-repeat text-[#1f2433] w-full h-[600px]  flex items-center py-[50px] px-[200px]
+	<section class="bg-[url('/public/bg.jpg')] bg-cover bg-no-repeat text-[#1f2433] w-full h-auto  flex items-center py-[50px] px-[300px]
                     max-lg:px-[50px] 
-                    max-sm:px-[30px] max-sm:h-[550px]
+                    max-sm:px-[30px] 
     ">
-
-        <div class=" bg-white/80 rounded-3xl h-full w-full flex flex-col items-center justify-center text-center px-10">
-            <h2 class="text-7xl mb-4 font-bold 
-                    max-lg:text-6xl 
-                    max-sm:text-5xl
-                    
+        <div class=" bg-white/80 rounded-3xl h-full w-full z-10 flex flex-col items-center justify-center text-center py-8 px-10">
+            <h2 class="text-5xl mb-4 font-bold 
+                    max-lg:text-4xl         
                     ">Canchero</h2>
-            <p class="text-[25px] mb-[60px] px-32 
+            <p class="text-[18px] mb-[40px] px-10 
                     max-xl:px-8 max-xl:mb-[30px] 
-                    max-lg:text-[22px] 
-                    max-sm:text-[17px] max-sm:px-0 max-sm:mb-[20px]
+                    max-lg:text-[16px] 
+                    max-sm:text-[14px] max-sm:px-0 max-sm:mb-[15px]
                     ">Reserva desde la comodidad de tu casa las diferentes canchas sinteticas aliadas. Encuentra informacion clave a la hora de elegir tu cancha, horarios disponibles, precios por hora, ubicacion, entre mucha mas informacion la cual te ayudara a elegir el escenario que mas se acomode a tus necesidades.</p>
-            <a class="flex items-center justify-center shadow hover:shadow-xl h-[65px] w-[250px] text-white hover:text-[#1f2433] bg-[#1f2433] hover:bg-white hover:border-solid border-[#1f2433] border-2 text-3xl rounded-3xl font-bold 
-                    max-lg:h-[50px] max-lg:w-[190px] max-lg:text-[22px]
-                    max-sm:h-[40px] max-sm:w-[150px] max-sm:text-[20px]
+            <a class="flex items-center justify-center shadow hover:shadow-xl h-auto w-auto py-[8px] px-[35px] text-white hover:text-[#1f2433] bg-[#1f2433] hover:bg-white hover:border-solid border-[#1f2433] border-2 text-xl rounded-3xl font-bold 
+                    max-lg:text-[18px] max-lg:py-[6px] max-lg:px-[30px]
+                    max-sm:text-[16px] max-sm:py-[4px] max-sm:px-[25px]
             " href="/login">
                 Ingresa ahora
             </a>
         </div>
     </section>
 
-    <section class="h-[900px] w-full bg-white flex items-center justify-center 
-                    max-lg:h-[1200px]
-    ">
-        <div class="mx-[100px] h-[700px] w-full bg-neutral-200 shadow-2xl rounded-3xl flex items-center justify-center gap-10
-                    max-lg:flex-col max-lg:gap-5 max-lg:h-[1000px] max-lg:mx-[50px] max-lg:px-10
-                    max-sm:mx-[20px] max-sm:px-5
+    <section class="h-auto w-full py-14 bg-white flex items-center justify-center">
+        <div class="mx-[100px] h-auto w-full bg-neutral-200 shadow-2xl rounded-3xl flex items-center justify-center gap-10 py-12 px-12
+                    max-lg:flex-col max-lg:gap-6 max-lg:mx-[50px] max-lg:px-10 max-lg:py-10
+                    max-sm:mx-[20px] max-sm:px-8 max-sm:py-8 max-sm:gap-8
         ">
-            <div class=" ml-[40px] h-auto w-full bg-white rounded-3xl flex flex-col  items-center justify-center text-center px-[50px]
+            <div class="h-auto w-full bg-white rounded-3xl flex flex-col  items-center justify-center text-center px-[50px]
                         max-lg:h-[300px] max-lg:ml-0 
                         max-sm:px-[20px]
             ">
 
-                <div class="h-[150px] flex items-end">
-                    <svg class="max-lg:w-[70px] max-lg:h-[70px] 
-                                max-sm:w-[60px] max-sm:h-[60px] max-sm:mb-3
-                    " width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"> <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <div class="h-[100px] flex items-end">
+                    <svg class="max-lg:w-[55px] max-lg:h-[55px] 
+                                max-sm:w-[45px] max-sm:h-[45px] max-sm:mb-3
+                    " width="65px" height="65px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"> <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                 </div>
 
-                <div class="text-[#1f2433] h-[350px] w-[full] flex flex-col justify-center 
+                <div class="text-[#1f2433] h-[350px] w-[full] flex flex-col justify-start pt-5
                             max-lg:h-[200px]
                 ">
-                    <h2 class="font-bold text-5xl mb-8
-                            max-lg:text-4xl max-lg:mb-2 max-lg:mt-2 
+                    <h2 class="font-bold text-3xl mb-8
+                            max-lg:text-3xl max-lg:mb-2 max-lg:mt-2 
                             max-sm:text-2xl
                     ">Rapidez</h2>
                     <p class="text-xl 
-                            max-lg:text-[19px] max-lg:leading-[25px]
-                            max-sm:text-[16px] max-sm:leading-[20px]
+                            max-lg:text-[17px] max-lg:leading-[25px]
+                            max-sm:text-[15px] max-sm:leading-[20px]
                     ">Agenda de manera rapida, facil y segura tu cancha sintetica viendo en tiempo real la disponibilidad de los escenarios disponibles al igual que su horario.</p>
                 </div>
 
@@ -76,22 +71,22 @@ import Layout from "../layouts/Layout.astro"
                         max-sm:px-[20px]
             ">
 
-                <div class="h-[150px] flex items-end">
-                    <svg class="max-lg:w-[70px] max-lg:h-[70px] 
-                                max-sm:w-[60px] max-sm:h-[60px] max-sm:mb-3
-                    " fill="#000000" width="100px" height="100px" viewBox="0 0 35 35" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.5,34.44A3.07,3.07,0,0,1,15.89,34L9.82,30.45A14.79,14.79,0,0,1,2.25,17.7V8A3.2,3.2,0,0,1,4.34,5L16.4.57a3.2,3.2,0,0,1,2.2,0L30.66,5a3.2,3.2,0,0,1,2.09,3V17.7a14.79,14.79,0,0,1-7.57,12.75L19.11,34A3.07,3.07,0,0,1,17.5,34.44Zm0-31.56a.67.67,0,0,0-.24,0L5.2,7.33A.69.69,0,0,0,4.75,8V17.7a12.3,12.3,0,0,0,6.33,10.59l6.07,3.56a.73.73,0,0,0,.7,0l6.07-3.56h0A12.3,12.3,0,0,0,30.25,17.7V8a.69.69,0,0,0-.45-.65L17.74,2.92A.67.67,0,0,0,17.5,2.88Z"></path><path d="M16.4,22.35a1.3,1.3,0,0,1-.81-.29l-4.27-3.6a1.25,1.25,0,0,1,1.61-1.92l3.35,2.82L22,13.06a1.25,1.25,0,0,1,1.86,1.68l-6.48,7.2A1.27,1.27,0,0,1,16.4,22.35Z"></path></g></svg>
+                <div class="h-[100px] flex items-end">
+                    <svg class="max-lg:w-[55px] max-lg:h-[55px] 
+                                max-sm:w-[45px] max-sm:h-[45px] max-sm:mb-3
+                    " fill="#000000" width="65px" height="65px" viewBox="0 0 35 35" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.5,34.44A3.07,3.07,0,0,1,15.89,34L9.82,30.45A14.79,14.79,0,0,1,2.25,17.7V8A3.2,3.2,0,0,1,4.34,5L16.4.57a3.2,3.2,0,0,1,2.2,0L30.66,5a3.2,3.2,0,0,1,2.09,3V17.7a14.79,14.79,0,0,1-7.57,12.75L19.11,34A3.07,3.07,0,0,1,17.5,34.44Zm0-31.56a.67.67,0,0,0-.24,0L5.2,7.33A.69.69,0,0,0,4.75,8V17.7a12.3,12.3,0,0,0,6.33,10.59l6.07,3.56a.73.73,0,0,0,.7,0l6.07-3.56h0A12.3,12.3,0,0,0,30.25,17.7V8a.69.69,0,0,0-.45-.65L17.74,2.92A.67.67,0,0,0,17.5,2.88Z"></path><path d="M16.4,22.35a1.3,1.3,0,0,1-.81-.29l-4.27-3.6a1.25,1.25,0,0,1,1.61-1.92l3.35,2.82L22,13.06a1.25,1.25,0,0,1,1.86,1.68l-6.48,7.2A1.27,1.27,0,0,1,16.4,22.35Z"></path></g></svg>
                 </div>
 
-                <div class="text-[#1f2433] h-[350px] w-[full] flex flex-col justify-center 
+                <div class="text-[#1f2433] h-[350px] w-[full] flex flex-col justify-start pt-5
                             max-lg:h-[200px]
                 ">
-                    <h2 class="font-bold text-5xl mb-8
-                            max-lg:text-4xl max-lg:mb-2 max-lg:mt-2 
+                    <h2 class="font-bold text-3xl mb-8
+                            max-lg:text-3xl max-lg:mb-2 max-lg:mt-2 
                             max-sm:text-2xl
                     ">Confianza</h2>
                     <p class="text-xl 
-                            max-lg:text-[19px] max-lg:leading-[25px]
-                            max-sm:text-[16px] max-sm:leading-[20px]
+                            max-lg:text-[17px] max-lg:leading-[25px]
+                            max-sm:text-[15px] max-sm:leading-[20px]
                     ">Con nuestro sistema tendras la seguridad de que nustras canchas aliadas agenden el escenario deportivo a la hora apartada.</p>
                     
                 </div>
@@ -108,27 +103,27 @@ import Layout from "../layouts/Layout.astro"
 
             </div>
 
-            <div class=" mr-[40px] h-auto w-full bg-white rounded-3xl flex flex-col  items-center justify-center text-center px-[50px]
+            <div class="h-auto w-full bg-white rounded-3xl flex flex-col  items-center justify-center text-center px-[50px]
                         max-lg:h-[300px]  max-lg:mr-0 
                         max-sm:px-[20px]
             ">
 
-                <div class="h-[150px] flex items-end">
-                    <svg class="max-lg:w-[70px] max-lg:h-[70px] 
-                                max-sm:w-[60px] max-sm:h-[60px] max-sm:mb-3
-                    " fill="#000000" height="100px" width="100px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M27,4H5C3.3,4,2,5.3,2,7v18c0,1.7,1.3,3,3,3h22c1.7,0,3-1.3,3-3V7C30,5.3,28.7,4,27,4z M12.1,7.6c0.1-0.1,0.1-0.2,0.2-0.3 c0.4-0.4,1-0.4,1.4,0c0.1,0.1,0.2,0.2,0.2,0.3C14,7.7,14,7.9,14,8c0,0.1,0,0.3-0.1,0.4c-0.1,0.1-0.1,0.2-0.2,0.3 C13.5,8.9,13.3,9,13,9c-0.1,0-0.3,0-0.4-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.2-0.2-0.3C12,8.3,12,8.1,12,8 C12,7.9,12,7.7,12.1,7.6z M9.1,7.6c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.2-0.2,0.3-0.2C10,6.9,10.4,7,10.7,7.3 c0.1,0.1,0.2,0.2,0.2,0.3C11,7.7,11,7.9,11,8c0,0.3-0.1,0.5-0.3,0.7C10.5,8.9,10.3,9,10,9C9.7,9,9.5,8.9,9.3,8.7C9.1,8.5,9,8.3,9,8 C9,7.9,9,7.7,9.1,7.6z M6.3,7.3c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1-0.1,0.2-0.1C6.7,7,6.7,7,6.8,7c0.1,0,0.3,0,0.4,0 c0.1,0,0.1,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.2,0.3C8,7.7,8,7.9,8,8c0,0.1,0,0.3-0.1,0.4 C7.9,8.5,7.8,8.6,7.7,8.7C7.5,8.9,7.3,9,7,9S6.5,8.9,6.3,8.7C6.1,8.5,6,8.3,6,8C6,7.7,6.1,7.5,6.3,7.3z M28,25c0,0.6-0.4,1-1,1H5 c-0.6,0-1-0.4-1-1V12h24V25z"></path> <path d="M23,14H9c-1.7,0-3,1.3-3,3v4c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-4C26,15.3,24.7,14,23,14z M18.7,18.7l-2,2 C16.5,20.9,16.3,21,16,21s-0.5-0.1-0.7-0.3l-1-1c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l0.3,0.3l1.3-1.3c0.4-0.4,1-0.4,1.4,0 S19.1,18.3,18.7,18.7z"></path> </g></svg>
+                <div class="h-[100px] flex items-end">
+                    <svg class="max-lg:w-[55px] max-lg:h-[55px] 
+                                max-sm:w-[45px] max-sm:h-[45px] max-sm:mb-3
+                    " fill="#000000" height="65px" width="65px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M27,4H5C3.3,4,2,5.3,2,7v18c0,1.7,1.3,3,3,3h22c1.7,0,3-1.3,3-3V7C30,5.3,28.7,4,27,4z M12.1,7.6c0.1-0.1,0.1-0.2,0.2-0.3 c0.4-0.4,1-0.4,1.4,0c0.1,0.1,0.2,0.2,0.2,0.3C14,7.7,14,7.9,14,8c0,0.1,0,0.3-0.1,0.4c-0.1,0.1-0.1,0.2-0.2,0.3 C13.5,8.9,13.3,9,13,9c-0.1,0-0.3,0-0.4-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.2-0.2-0.3C12,8.3,12,8.1,12,8 C12,7.9,12,7.7,12.1,7.6z M9.1,7.6c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.2-0.2,0.3-0.2C10,6.9,10.4,7,10.7,7.3 c0.1,0.1,0.2,0.2,0.2,0.3C11,7.7,11,7.9,11,8c0,0.3-0.1,0.5-0.3,0.7C10.5,8.9,10.3,9,10,9C9.7,9,9.5,8.9,9.3,8.7C9.1,8.5,9,8.3,9,8 C9,7.9,9,7.7,9.1,7.6z M6.3,7.3c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1-0.1,0.2-0.1C6.7,7,6.7,7,6.8,7c0.1,0,0.3,0,0.4,0 c0.1,0,0.1,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.2,0.3C8,7.7,8,7.9,8,8c0,0.1,0,0.3-0.1,0.4 C7.9,8.5,7.8,8.6,7.7,8.7C7.5,8.9,7.3,9,7,9S6.5,8.9,6.3,8.7C6.1,8.5,6,8.3,6,8C6,7.7,6.1,7.5,6.3,7.3z M28,25c0,0.6-0.4,1-1,1H5 c-0.6,0-1-0.4-1-1V12h24V25z"></path> <path d="M23,14H9c-1.7,0-3,1.3-3,3v4c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-4C26,15.3,24.7,14,23,14z M18.7,18.7l-2,2 C16.5,20.9,16.3,21,16,21s-0.5-0.1-0.7-0.3l-1-1c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l0.3,0.3l1.3-1.3c0.4-0.4,1-0.4,1.4,0 S19.1,18.3,18.7,18.7z"></path> </g></svg>
                 </div>
 
-                <div class="text-[#1f2433] h-[350px] w-[full] flex flex-col justify-center 
+                <div class="text-[#1f2433] h-[350px] w-[full] flex flex-col justify-start pt-5
                             max-lg:h-[200px]
                 ">
-                    <h2 class="font-bold text-5xl mb-8
-                            max-lg:text-4xl max-lg:mb-2 max-lg:mt-2 
+                    <h2 class="font-bold text-3xl mb-8
+                            max-lg:text-3xl max-lg:mb-2 max-lg:mt-2 
                             max-sm:text-2xl
                 ">Facil de usar</h2>
                     <p class="text-xl 
-                            max-lg:text-[19px] max-lg:leading-[25px]
-                            max-sm:text-[16px] max-sm:leading-[20px]
+                            max-lg:text-[17px] max-lg:leading-[25px]
+                            max-sm:text-[15px] max-sm:leading-[20px]
                     ">nos enfocamos en brindar una interfaz facil de usar, al igual todas nustras opciones estaran disponibles de manera visual para que interactues con ellas. </p>
                 </div>
 
