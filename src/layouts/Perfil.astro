@@ -1,20 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro"
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
 ---
 
-<Layout title= "Perfil">
+<Layout title= {title}>
     <section class="flex">
-        <div class="flex flex-col items-center w-[300px] text-[24px] bg-neutral-100">
-            <menu class="flex flex-col w-full items-start h-[600px]">
-                <a class=" transition duration-300 hover:bg-neutral-200 h-[80px] w-full flex items-center justify-center hover:shadow-lg" href="">Cuenta</a>
-                <a class=" transition duration-300 hover:bg-neutral-200 h-[80px] w-full flex items-center justify-center hover:shadow-lg" href="">Reservas</a>
-                <a class=" transition duration-300 hover:bg-neutral-200 h-[80px] w-full flex items-center justify-center hover:shadow-lg" href="">Contabilidad</a>
-            </menu>
-            <button class="font-bold shadow hover:shadow-xl h-[50px] w-[200px] text-white hover:text-[#1f2433] bg-[#1f2433] hover:bg-white hover:border-solid border-[#1f2433] border-2 text-2xl rounded-3xl mb-9">
-                Cerrar sesion
-            </button>
+        <div class="text-[18px] bg-neutral-100">
+            <div class="flex flex-col w-[180px] items-center sticky top-0">
+                <menu class="flex flex-col w-[180px] items-start h-[450px] sticky top-0">
+                    <a class=" transition duration-300 hover:bg-neutral-200 h-[60px] w-full flex items-center justify-center hover:shadow-lg hover:font-bold" href="/perfil/cuenta">Cuenta</a>
+                    <a class=" transition duration-300 hover:bg-neutral-200 h-[60px] w-full flex items-center justify-center hover:shadow-lg hover:font-bold" href="/perfil/reservas">Reservas</a>
+                    <a class=" transition duration-300 hover:bg-neutral-200 h-[60px] w-full flex items-center justify-center hover:shadow-lg hover:font-bold" href="">Contabilidad</a>
+                </menu>
+    
+                <button class="font-bold shadow hover:shadow-xl h-[40px] w-[145px] text-white hover:text-[#1f2433] bg-[#1f2433] hover:bg-white hover:border-solid border-[#1f2433] border-2 text-lg rounded-3xl mb-9">
+                    Cerrar sesion
+                </button>
+            </div>
+            
         </div>
     
-        <slot />
+        <div class="m-[40px] p-14 w-full h-full border-solid border-neutral-400 border rounded-xl">
+            <slot />
+        </div>
     </section>
 </Layout>
