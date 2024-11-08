@@ -1,0 +1,19 @@
+---
+interface Props {
+    time: string;
+}
+
+const {time} = Astro.props
+---
+
+<div class="flex items-center h-[110px] border-neutral-400 border-b">
+    <p class="font-bold text-[28px]">{time}</p>
+    
+    <button class="w-[280px] h-[50px] text-[18px] mx-auto rounded-3xl text-black bg-white hover:text-white hover:bg-[#297908] border-solid hover:border-none border-2 border-black  font-bold shadow-lg">
+        Informacion de la reserva
+    </button>
+
+    <button class="w-[130px] h-[40px] text-[18px] rounded-3xl text-white  bg-[#ff7316] hover:text-black hover:bg-white border-solid hover:border-2 border-[#ff8818]  font-bold shadow-lg">
+        RESERVAR
+    </button>
+</div>
