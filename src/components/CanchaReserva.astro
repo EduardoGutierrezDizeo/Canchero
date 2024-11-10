@@ -1,0 +1,27 @@
+---
+interface Props {
+    src : string;
+    lugar : string;
+    hora : string;
+    fecha : string;
+}
+
+const {src, lugar, hora, fecha} = Astro.props
+---
+
+<li class="h-[220px] bg-[#f1f1f1] rounded-2xl p-[30px] flex shadow-xl">
+    <div class="flex items-center">
+        <img class="h-[170px] rounded-2xl shadow-xl w-[300px] mr-[20px]" src={src} alt="">
+        <div class="h-full flex flex-col justify-center gap-3">
+            <p><span class="font-semibold text-lg">Lugar: </span>{lugar}</p>
+            <p><span class="font-semibold text-lg">Fecha: </span>{fecha}</p>
+            <p><span class="font-semibold text-lg">Hora: </span> {hora}</p>
+        </div>
+    </div>
+
+    <div class="m-auto">
+        <button class="w-[130px] h-[40px] text-[18px] rounded-3xl text-white  bg-[#ff7316] hover:text-black hover:bg-white border-solid hover:border-2 border-[#ff8818]  font-bold shadow-lg">
+            RESERVAR
+        </button>
+    </div>
+</li>

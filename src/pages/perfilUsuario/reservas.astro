@@ -1,0 +1,51 @@
+---
+import CanchaReserva from "../../components/CanchaReserva.astro";
+import Perfil from "../../layouts/Perfil.astro";
+---
+
+<Perfil title="Reservas">
+    <div class="flex h-[150px] border-b border-neutral-400 border-solid pb-[40px]">
+        <div class="flex flex-col items-center m-auto">
+            <p class="text-[20px] mb-[10px] font-semibold">Hora</p>
+            <select name="time" id="time" class="h-[35px] pl-[10px] w-[120px] rounded-xl border border-neutral-400 border-solid">
+                <option value="1">4:00 Pm</option>
+                <option value="2">5:00 Pm</option>
+                <option value="3">6:00 Pm</option>
+                <option value="4">7:00 Pm</option>
+                <option value="5">8:00 Pm</option>
+                <option value="6">9:00 Pm</option>
+                <option value="7">10:00 Pm</option>
+            </select>
+        </div>
+
+        <div class="flex flex-col items-center m-auto">
+            <p class="text-[20px] mb-[10px] font-semibold">Fecha</p>
+            <input type="date" class="h-[35px] pl-[10px] rounded-xl w-[150px] border border-neutral-400 border-solid">
+        </div>
+
+        <div class="flex flex-col items-center m-auto">
+            <p class="text-[20px] mb-[10px] font-semibold">Lugar</p>
+            <select name="place" id="place" class="h-[35px] pl-[10px] w-[200px] rounded-xl border border-neutral-400 border-solid">
+                <option value="1">La Bombonera</option>
+                <option value="2">Club comercio</option>
+                <option value="3">El Bernabeu</option>
+                <option value="4">Arena 23</option>
+                <option value="5">La Modelo</option>
+            </select>
+        </div>
+
+        <div class="m-auto">
+            <button class="w-[130px] h-[40px] text-[18px] rounded-3xl text-white  bg-[#297908] hover:text-black hover:bg-white border-solid hover:border-2 border-[#297908]  font-bold shadow-2xl">
+                BUSCAR
+            </button>
+        </div>
+    </div>
+    <div class="w-full h-auto py-[40px]">
+        <ul class="w-full h-auto gap-[35px] flex flex-col">
+            <CanchaReserva lugar="La Bombonera" fecha="10/10/2024" hora="5:00 Pm" src="/bg.jpg"></CanchaReserva>
+            <CanchaReserva lugar="La Bombonera" fecha="10/10/2024" hora="5:00 Pm" src="/bg.jpg"></CanchaReserva>
+            <CanchaReserva lugar="La Bombonera" fecha="10/10/2024" hora="5:00 Pm" src="/bg.jpg"></CanchaReserva>
+            <CanchaReserva lugar="La Bombonera" fecha="10/10/2024" hora="5:00 Pm" src="/bg.jpg"></CanchaReserva>
+        </ul>
+    </div>
+</Perfil>
