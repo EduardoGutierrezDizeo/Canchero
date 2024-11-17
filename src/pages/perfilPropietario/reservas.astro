@@ -5,17 +5,13 @@ import Horarios from "../../components/Horarios.astro"
 
 <Perfil title="Reservas">
     <div>
-        <div class="h-[70px] flex items-start">
+        <form class="h-[70px] flex items-start">
             <input class="border-black border-[1px] h-[40px] w-[200px] rounded-[17.5px] pl-[14px] mr-[30px]" type="date">
             <button class="w-[130px] h-[40px] text-[18px] rounded-3xl text-white  bg-[#297908] hover:text-black hover:bg-white border-solid hover:border-2 border-[#297908]  font-bold shadow-2xl">
                 BUSCAR
             </button>
 
-        </div>
-
-        <div>
-
-        </div>
+        </form>
 
         <div>
             <Horarios time="4:00 Pm"></Horarios>
@@ -28,4 +24,15 @@ import Horarios from "../../components/Horarios.astro"
 
         </div>
     </div>
+
+    <script>
+        const infoReserva = document.getElementById("infoReserva");
+
+        infoReserva.addEventListener("click", function(){
+            const url = "/perfilPropietario/info-reserva";
+            const nombreVentana = "Informacion de la reserva";
+            const opciones = "width=400,height=500,scrollbars=yes,resizable=yes";
+            window.open(url, nombreVentana, opciones);
+        });
+    </script>
 </Perfil>

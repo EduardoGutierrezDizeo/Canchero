@@ -5,7 +5,7 @@ import Perfil from "../../layouts/Perfil.astro";
 
 <Perfil title="Reservas">
     <div class="flex h-[150px] border-b border-neutral-400 border-solid pb-[40px]">
-        <div class="flex flex-col items-center m-auto">
+        <form class="flex flex-col items-center m-auto">
             <p class="text-[20px] mb-[10px] font-semibold">Hora</p>
             <select name="time" id="time" class="h-[35px] pl-[10px] w-[120px] rounded-xl border border-neutral-400 border-solid">
                 <option value="1">4:00 Pm</option>
@@ -39,7 +39,7 @@ import Perfil from "../../layouts/Perfil.astro";
                 BUSCAR
             </button>
         </div>
-    </div>
+    </form>
     <div class="w-full h-auto py-[40px]">
         <ul class="w-full h-auto gap-[35px] flex flex-col">
             <CanchaReserva lugar="La Bombonera" fecha="10/10/2024" hora="5:00 Pm" src="/bg.jpg"></CanchaReserva>

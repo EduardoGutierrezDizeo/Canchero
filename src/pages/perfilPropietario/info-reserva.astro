@@ -1,0 +1,43 @@
+---
+
+---
+<html>
+    <body class="p-[30px] m-0 w-[400px] h-[500px] my-auto bg-[url('/bg.jpg')] bg-cover">
+        <div class="bg-white border-[1px] flex flex-col justify-center py-[30px] border-neutral-400 w-full h-full rounded-2xl">
+            <h1 class="mb-[50px] text-[22px] text-center font-bold">Informacion de la reserva</h1>
+            <div class="flex items-end m-[15px]">
+                <h2 class="w-[100px] text-[14px] font-bold">Nombre:</h2>
+                <p class="w-[270px] text-[14px]">Julian Camilo Pedraza Villadiegos</p>
+            </div>
+            <div class="flex items-end m-[15px] pb-[25px]">
+                <h2 class="w-[100px] text-[14px] font-bold">Telefono:</h2>
+                <p class="w-[270px] text-[14px]">3024392826</p>
+            </div>
+            <div class="flex flex-col items-center w-full pt-[20px] ">
+                <h2 class="font-bold">VALOR CANCELADO</h2>
+                <p id="valor"></p>
+                <form class="flex w-full justify-center mt-[20px] gap-[12px]">
+                    <input id="valorAbono" class="border-black border-[1px] h-[35px] w-[130px] rounded-[17.5px] pl-[14px] " type="number">
+                    <button id="ingresarAbono" class="w-[160px] h-[35px] text-[12px] rounded-3xl text-white  bg-[#297908] hover:text-black hover:bg-white border-solid hover:border-2 border-[#297908]  font-bold shadow-2xl">
+                        Ingresar Abono/Pago
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        let valor = 20000;
+        document.getElementById("valor").innerText = "$ " + valor;
+
+        const ingresarAbono = document.getElementById("ingresarAbono");
+        ingresarAbono.addEventListener("click", function(event){
+            event.preventDefault();
+            let valorAbono = (document.getElementById("valorAbono") as HTMLInputElement).value;
+            let total = parseFloat(valorAbono) + valor;
+            document.getElementById("valor").innerText = "$ " + total;
+            valor = total;
+            (document.getElementById("valorAbono") as HTMLInputElement).value = "";
+        });
+
+    </script>
+</html>
