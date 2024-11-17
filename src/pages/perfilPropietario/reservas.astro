@@ -27,10 +27,18 @@ import Horarios from "../../components/Horarios.astro"
 
     <script>
         const infoReserva = document.getElementById("infoReserva");
+        const reservar = document.getElementById("reservar");
 
         infoReserva.addEventListener("click", function(){
             const url = "/perfilPropietario/info-reserva";
             const nombreVentana = "Informacion de la reserva";
+            const opciones = "width=400,height=500,scrollbars=yes,resizable=yes";
+            window.open(url, nombreVentana, opciones);
+        });
+
+        reservar.addEventListener("click", function(){
+            const url = "/perfilPropietario/reservar";
+            const nombreVentana = "Crear reserva";
             const opciones = "width=400,height=500,scrollbars=yes,resizable=yes";
             window.open(url, nombreVentana, opciones);
         });
