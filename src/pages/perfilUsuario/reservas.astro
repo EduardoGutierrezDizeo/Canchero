@@ -4,9 +4,9 @@ import Perfil from "../../layouts/Perfil.astro";
 ---
 
 <Perfil title="Reservas">
-    <div class="flex h-[150px] border-b border-neutral-400 border-solid pb-[40px]">
-        <form class="flex flex-col items-center m-auto">
-            <p class="text-[20px] mb-[10px] font-semibold">Hora</p>
+    <form class="flex h-[150px] border-b border-neutral-400 border-solid pb-[40px]">
+        <div class="flex flex-col items-center m-auto">
+            <label class="text-[20px] mb-[10px] font-semibold">Hora</label>
             <select name="time" id="time" class="h-[35px] pl-[10px] w-[120px] rounded-xl border border-neutral-400 border-solid">
                 <option value="1">4:00 Pm</option>
                 <option value="2">5:00 Pm</option>
@@ -19,12 +19,12 @@ import Perfil from "../../layouts/Perfil.astro";
         </div>
 
         <div class="flex flex-col items-center m-auto">
-            <p class="text-[20px] mb-[10px] font-semibold">Fecha</p>
-            <input type="date" class="h-[35px] pl-[10px] rounded-xl w-[150px] border border-neutral-400 border-solid">
+            <label class="text-[20px] mb-[10px] font-semibold">Fecha</label>
+            <input type="date" class="h-[35px] px-[10px] rounded-xl w-[170px] border border-neutral-400 border-solid">
         </div>
 
         <div class="flex flex-col items-center m-auto">
-            <p class="text-[20px] mb-[10px] font-semibold">Lugar</p>
+            <label class="text-[20px] mb-[10px] font-semibold">Lugar</label>
             <select name="place" id="place" class="h-[35px] pl-[10px] w-[200px] rounded-xl border border-neutral-400 border-solid">
                 <option value="1">La Bombonera</option>
                 <option value="2">Club comercio</option>
@@ -34,8 +34,8 @@ import Perfil from "../../layouts/Perfil.astro";
             </select>
         </div>
 
-        <div class="m-auto">
-            <button class="w-[130px] h-[40px] text-[18px] rounded-3xl text-white  bg-[#297908] hover:text-black hover:bg-white border-solid hover:border-2 border-[#297908]  font-bold shadow-2xl">
+        <div class="m-auto ">
+            <button class="w-[130px] h-[40px] text-[18px] rounded-3xl border-[#297908] border-2 border-solid hover:text-white hover:bg-[#297908] hover:border-none  font-bold shadow-2xl">
                 BUSCAR
             </button>
         </div>
@@ -48,4 +48,15 @@ import Perfil from "../../layouts/Perfil.astro";
             <CanchaReserva lugar="La Bombonera" fecha="10/10/2024" hora="5:00 Pm" src="/bg.jpg"></CanchaReserva>
         </ul>
     </div>
+
+    <script>
+        const reserva = document.getElementById("reservarUsuario");
+
+        reserva.addEventListener("click", function(){
+            const url = "/perfilUsuario/reservar";
+            const nombreVentana = "Crear reserva"
+            const opciones = "width=400,height=500,scrollbars=yes,resizable=yes";
+            window.open(url, nombreVentana, opciones);
+        });
+    </script>
 </Perfil>

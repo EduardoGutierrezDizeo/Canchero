@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import { Icon } from 'astro-icon/components';
 ---
 
 <!doctype html>
@@ -17,9 +18,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="m-0 p-0">
-		<nav class="w-full h-[65px] bg-[#297908] flex items-center px-[75px] border-b-black border-[1px] 
-					max-lg:px-[30px] max-lg:h-[65px]
-					max-md:px-[10px]
+		<nav class="w-full h-[65px] bg-[#297908] flex items-center pr-[40px] pl-[75px] border-b-black border-[1px] 
+					max-lg:pl-[30px] max-lg:h-[65px]
+					max-md:pl-[10px]
 		" >
 			<div class="h-full w-[400px] flex items-center justify-center 
 						max-sm:justify-start max-sm:ml-6 max-sm:w-[300px] max-sm:hidden
@@ -53,6 +54,9 @@ const { title } = Astro.props;
 								max-sm:h-[30px]
 					" src="/public/perfil.jpg" alt="">
 					<p class=" max-sm:text-[14px]">Perfil</p>
+				</a>
+				<a href="/perfilPropietario/notificaciones" class="hover:shadow-xl h-[50px] w-auto px-2 transition duration-300 hover:bg-white hover:text-black rounded-xl flex flex-col items-center justify-center">
+					<Icon size="32" name="mdi:notifications-none" />
 				</a>
 			</div>
 		</nav>
