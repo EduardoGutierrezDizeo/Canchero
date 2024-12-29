@@ -18,44 +18,40 @@ import { Icon } from 'astro-icon/components';
 		<title>{title}</title>
 	</head>
 	<body class="m-0 p-0">
-		<nav class="w-full h-[65px] bg-[#297908] flex items-center pr-[40px] pl-[75px] border-b-black border-[1px] 
+		<nav class="w-full h-[65px] bg-white flex items-center pr-[40px] pl-[75px] border-b-[#297908]  border-[2px] 
 					max-lg:pl-[30px] max-lg:h-[65px]
 					max-md:pl-[10px]
 		" >
 			<div class="h-full w-[400px] flex items-center justify-center 
 						max-sm:justify-start max-sm:ml-6 max-sm:w-[300px] max-sm:hidden
-			">
-				<img class="h-[40px] 
-							max-lg:h-[40px]
-							max-md:h-[30px]
-				" src="/public/logo.png" alt="">
-				<p class="text-white text-2xl font-bold ml-4 
-						max-lg:text-xl max-lg:ml-4
-						max-md:text-lg
+			"> 
+				<p class="text-[#297908] text-3xl font-bold 
+						max-lg:text-2xl 
+						max-md:text-xl
 						max-sm:hidden
 				">Canchero</p>
 			</div>
-			<div class="h-[65px] w-full flex items-center gap-5 justify-end text-white  text-[16px]
+			<div class="h-[65px] w-full flex items-center gap-5 justify-end text-[#297908] font-semibold text-[16px]
 						max-lg:gap-2 max-lg:text-[18px] max-lg:h-[65px]
 						max-sm:justify-center max-sm:text-[15px]
 			">
-				<a class="hover:shadow-xl h-[35px] w-auto px-5 py-2 transition duration-300 hover:bg-white hover:text-black flex items-center justify-center rounded-xl
+				<a class="hover:shadow-xl h-[35px] w-auto px-5 py-2 transition duration-300 hover:bg-[#297908] hover:text-white flex items-center justify-center rounded-xl
 						max-md:px-2 
 				" href="/">Inicio</a>
-				<a class="hover:shadow-xl h-[35px] w-auto px-5 py-2 transition duration-300 hover:bg-white hover:text-black flex items-center justify-center rounded-xl
+				<a class="hover:shadow-xl h-[35px] w-auto px-5 py-2 transition duration-300 hover:bg-[#297908] hover:text-white flex items-center justify-center rounded-xl
 						max-md:px-2
 				" href="/perfilUsuario/reservas">Reservas</a>
-				<a class="hover:shadow-xl h-[35px] min-w-[140px] transition duration-300 px-5 py-2 hover:bg-white hover:text-black flex items-center justify-center rounded-xl
+				<a class="hover:shadow-xl h-[35px] min-w-[140px] transition duration-300 px-5 py-2 hover:bg-[#297908] hover:text-white flex items-center justify-center rounded-xl
 						max-md:px-2
 				" href="/login">Login / Sing Up</a>
-				<a class="hover:shadow-xl h-[60px] w-auto px-5 transition duration-300 hover:bg-white hover:text-black rounded-xl flex flex-col items-center justify-center text-[16px]
+				<a class="hover:shadow-xl h-[60px] w-auto px-5 transition duration-300 hover:bg-[#297908] hover:text-white rounded-xl flex flex-col items-center justify-center text-[16px]
 				" href="/perfilPropietario/cuenta">
 					<img class="h-[30px] 
 								max-sm:h-[30px]
 					" src="/public/perfil.jpg" alt="">
 					<p class=" max-sm:text-[14px]">Perfil</p>
 				</a>
-				<a href="/perfilPropietario/notificaciones" class="hover:shadow-xl h-[50px] w-auto px-2 transition duration-300 hover:bg-white hover:text-black rounded-xl flex flex-col items-center justify-center">
+				<a href="/perfilPropietario/notificaciones" class="hover:shadow-xl h-[50px] w-auto px-2 transition duration-300 hover:bg-[#297908] hover:text-white rounded-xl flex flex-col items-center justify-center">
 					<Icon size="32" name="mdi:notifications-none" />
 				</a>
 			</div>
@@ -63,7 +59,7 @@ import { Icon } from 'astro-icon/components';
 
 		<slot />
 
-		<footer class="w-full h-[120px] bg-[#1f2433] text-white flex items-center px-[90px] ">
+		<footer class="w-full h-[120px] bg-[#297908] text-white flex items-center px-[90px] ">
 
 		</footer>
 	</body>
